@@ -1,5 +1,5 @@
-from telethon.sync import TelegramClient, events
 from telethon.errors import PhoneNumberBannedError, PasswordHashInvalidError, UsernameInvalidError
+from telethon.sync import TelegramClient, events
 import logging
 import asyncio
 import os
