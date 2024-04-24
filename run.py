@@ -1,14 +1,13 @@
 from telethon.sync import TelegramClient, events
 from telethon.errors import PhoneNumberBannedError, PasswordHashInvalidError, UsernameInvalidError
-from config import API_ID, API_HASH, PHONE_NUMBER, DEVICE_MODEL, SYSTEM_VERSION, EDITED_MSG, USE_DATABASE
-
-import os
 import logging
 import asyncio
+import os
 
+from config import API_ID, API_HASH, PHONE_NUMBER, DEVICE_MODEL, SYSTEM_VERSION, EDITED_MSG, USE_DATABASE
 from utilities import logo, gd_print, bd_print
-from handlers.del_msg import delete_handler
 from handlers.edit_msg import edited_handler
+from handlers.del_msg import delete_handler
 from handlers.all_msg import all_handler#, album_handler
 from database.db import connect, disconnect
 
